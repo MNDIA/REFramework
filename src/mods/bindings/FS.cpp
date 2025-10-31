@@ -356,6 +356,6 @@ void bindings::open_fs(ScriptState* s) {
             lua_error(l);
         }
 
-        return old_loadlib(filepath.c_str(), funcname.c_str());
+        return old_loadlib(path->string().c_str(), funcname.c_str());
     };
 }
